@@ -5,3 +5,4 @@
 # Loop over all files
 for data in $@
 do
+echo "Unique species in $data"
