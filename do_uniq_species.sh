@@ -7,4 +7,5 @@ for data in $@
 	do
 	echo "Unique species in $data"
 	# Extract species name from data
-	cut -d , -f 2 $data 
+	cut -d , -f 2 $data | sort | uniq
+	done
