@@ -4,5 +4,7 @@
 
 # Loop over all files
 for data in $@
-do
-echo "Unique species in $data"
+	do
+	echo "Unique species in $data"
+	# Extract species name from data
+	cut -d , -f 2 $data 
